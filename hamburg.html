@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --title-color:red;
+        }
+        h1 {
+            color: var(--title-color);
+        }
+        .new-sign::after {
+            content: " New!";
+            color: red;
+        }
+        .box {
+            width:400px ;
+            height: 100px;
+            background-color: blue;
+            position: inherit;
+        }
+        .box::after {
+            content: "";
+            width: 400px;
+            height: 100px;
+            background-color: brown;
+            top:310px;
+            position: absolute;
+        }
+        input:checked {
+            box-shadow: 0 0 0 3px hotpink;
+            /* x축, y축, 흐림정도, 퍼짐정도 */
+        }
+    </style>
+</head>
+<body>
+    <h1>hamburger</h1>
+
+    <ol>
+        <li>Coffee</li>
+        <li class="new-sign">sandwich</li>
+        <li>fruit</li>
+        <li class="new-sign">tea</li>
+    </ol>
+    <input type="checkbox">
+    <div class="box"></div>
+</body>
+</html>
