@@ -1,0 +1,17 @@
+@import './reset.css';
+@import './variable.css';
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200&family=Noto+Sans+KR:wght@200&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-purple);
+    color: white;
+}
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+}
