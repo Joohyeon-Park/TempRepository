@@ -5,6 +5,7 @@
 @import './navigation-bar.css';
 @import './reset.css';
 @import './variable.css';
+@import './media-query.css';
 
 * {
     box-sizing: border-box;
